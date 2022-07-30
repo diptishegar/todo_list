@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import { createProfile } from "../actions/actions";
-
+import "../createprofile.css";
 
 const CreateProfile = ( {profiles, onCreateProf }) => {
     const [studName, setStudName] = useState('');
     return (
-    <div>
+    <div className="container-fluid add_div d-flex flex-row">
         <input 
         value={studName}
-        className="name" 
+        className="name form-control input_div" 
         onChange={e=>setStudName(e.target.value)}
-        placeholder="Enter Name" 
+        placeholder="Enter a task" 
         type="text" />
         <button 
         onClick={() => {
@@ -21,8 +21,8 @@ const CreateProfile = ( {profiles, onCreateProf }) => {
                 setStudName('');
             }
         }}
-        className="submit-btn" 
-        type="submit">Add</button>
+        className="submit-btn btn btn-primary px-6" 
+        type="submit">Create</button>
     </div>
     );
     };

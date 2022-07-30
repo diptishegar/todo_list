@@ -5,10 +5,14 @@ import { deleteProfile } from "../actions/actions";
 import CreateProfile from "./CreateProfile";
 
 const StudProfiles = ({ profiles=[], onRemoveProf }) => {
+    var i=0;
     return(
     <div>
     <CreateProfile />
-    {profiles.map(profile => <Profile profile={profile} key={profile.key} onRemoveProf={onRemoveProf}/>)}
+    {   
+        profiles.map(profile =>
+        <Profile profile={profile} i={(i++)+1} key={profile.key} onRemoveProf={onRemoveProf}/>
+        )}
     </div>
     );
     };

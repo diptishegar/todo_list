@@ -11,10 +11,11 @@ export const profiles = (state = [], action) => {
     switch(type){
         case CREATE_PROFILE:{
             const {text} = payload;
-            const newProfile = {
-                text,
-                key: state.length
-            };
+                const newProfile = {
+                    text,
+                    key: state.length
+                };
+            
             return state.concat(newProfile);
         }
         case DELETE_PROFILE: {

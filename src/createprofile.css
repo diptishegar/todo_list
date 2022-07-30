@@ -1,0 +1,22 @@
+.add_div{
+    margin-top: -50%;
+    margin-bottom: 3rem;
+    width: 50rem;
+}
+.submit-btn{
+    margin-left: 1rem;
+    width: 10rem; height: 3.5rem;
+    font-size: 2rem !important;
+    font-weight: 600 !important;
+}
+.input_div{
+color: black !important;
+font-size: 20px !important;
+}
+.card-text{
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.num_todos{
+    padding-right: 2rem;
+}
