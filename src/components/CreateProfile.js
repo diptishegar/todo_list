@@ -6,7 +6,9 @@ import "../createprofile.css";
 const CreateProfile = ( {profiles, onCreateProf }) => {
     const [studName, setStudName] = useState('');
     return (
+        <div>
     <div className="container-fluid add_div d-flex flex-row">
+    
         <input 
         value={studName}
         className="name form-control input_div" 
@@ -23,6 +25,7 @@ const CreateProfile = ( {profiles, onCreateProf }) => {
         }}
         className="submit-btn btn btn-primary px-6" 
         type="submit">Create</button>
+    </div>
     </div>
     );
     };

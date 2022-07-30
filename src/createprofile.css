@@ -20,3 +20,13 @@ font-size: 20px !important;
 .num_todos{
     padding-right: 2rem;
 }
+
+.title_elt{
+    text-align: center;
+    font-size: 4rem;
+    position: absolute;
+    display: inline;
+    margin-top: -33rem !important;
+    margin-left: -15rem !important;
+
+}
