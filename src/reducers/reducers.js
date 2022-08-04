@@ -10,9 +10,11 @@ export const profiles = (state = [], action) => {
     const {type, payload} = action;
     switch(type){
         case CREATE_PROFILE:{
-            const {text} = payload;
+            const {text, descrip, difficulty} = payload;
                 const newProfile = {
                     text,
+                    descrip,
+                    difficulty,
                     key: state.length
                 };
             
@@ -28,3 +30,4 @@ export const profiles = (state = [], action) => {
     }
     return state;
 }
+

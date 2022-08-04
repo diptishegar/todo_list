@@ -24,9 +24,17 @@ font-size: 20px !important;
 .title_elt{
     text-align: center;
     font-size: 4rem;
+    margin-top: -28rem;
     position: absolute;
     display: inline;
-    margin-top: -33rem !important;
+    position: fixed;
     margin-left: -15rem !important;
 
+}
+
+.card-indi-profile{
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
